@@ -1,0 +1,11 @@
+.about-skillset__list {
+  all: unset;
+}
+
+.about-skillset__list li {
+  all: unset;
+  background-color: #c5f4d6;
+  border: 1px solid black;
+  border-radius: 3em;
+  padding: 0.25em 0.7em;
+}

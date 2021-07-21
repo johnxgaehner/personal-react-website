@@ -1,3 +1,5 @@
+import photo from "../images/john.jpg";
+
 export default function Home() {
-  return <h2>Home</h2>;
+  return <img className="image" src={photo} alt="john" />;
 }
