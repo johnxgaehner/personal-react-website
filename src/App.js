@@ -17,23 +17,22 @@ function App() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
-      <main className="main">
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </main>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+
       <footer className="footer">
-        <Link className="footer__imprint" to="">
-          Imprint
-        </Link>
+        <div className="footer__imprint">
+          <Link to="">Imprint</Link>
+        </div>
         <p className="footer__copyright">Ⓒ 2021 John-Lucas Goehner</p>
       </footer>
     </div>

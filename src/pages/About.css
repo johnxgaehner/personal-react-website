@@ -1,3 +1,13 @@
+.about {
+  padding: 2rem;
+  font-size: 4rem;
+  display: grid;
+  align-items: center;
+}
+
+.about__text {
+}
+
 .about-skillset__list {
   all: unset;
 }

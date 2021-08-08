@@ -1,0 +1,26 @@
+.contact {
+  padding: 2rem;
+  display: grid;
+}
+
+.contact__links {
+  align-self: flex-start;
+}
+
+.contact__links ul li {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__info ul li {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
