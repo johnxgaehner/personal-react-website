@@ -1,5 +1,5 @@
 import "./App.css";
-import { Switch, Route, NavLink, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>John-Lucas Goehner</h1>
         <nav className="header__navigation">
           <NavLink exact to="/">
-            JLG
+            <h1>John-Lucas Goehner</h1>
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
@@ -29,12 +28,7 @@ function App() {
         </Route>
       </Switch>
 
-      <footer className="footer">
-        <div className="footer__imprint">
-          <Link to="">Imprint</Link>
-        </div>
-        <p className="footer__copyright">Ⓒ 2021 John-Lucas Goehner</p>
-      </footer>
+      <footer className="footer">Ⓒ 2021 John-Lucas Goehner</footer>
     </div>
   );
 }
