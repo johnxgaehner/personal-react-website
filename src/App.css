@@ -1,3 +1,46 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: url(../src/images/cursor.png) 12 12, auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header__navigation a:hover {
+  color: blue;
+  cursor: url(../src/images/cursor.png) 12 12, auto;
+}
+
+.header__navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  font-size: 0.75rem;
+}
+
+::selection {
+  background-color: black;
+  color: white;
 }
