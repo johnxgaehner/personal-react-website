@@ -3,6 +3,7 @@
   display: flex;
   word-break: break-all;
   align-items: center;
+  justify-content: center;
 }
 
 .contact__info--large-item {
