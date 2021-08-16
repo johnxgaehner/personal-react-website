@@ -1,0 +1,27 @@
+.Header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.Header__navigation {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Header__navigation a:hover {
+  color: blue;
+  cursor: url(../images/cursor.png) 12 12, auto;
+}
+
+.Header__navigation a {
+  text-decoration: none;
+  color: black;
+}
