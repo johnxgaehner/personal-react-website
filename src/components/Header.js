@@ -10,7 +10,6 @@ export default function Header() {
           to="home"
           spy={true}
           smooth={true}
-          offset={10}
           duration={500}
         >
           <h1>John-Lucas Goehner</h1>
@@ -20,7 +19,6 @@ export default function Header() {
           to="about"
           spy={true}
           smooth={true}
-          offset={10}
           duration={500}
         >
           About
@@ -30,7 +28,6 @@ export default function Header() {
           to="contact"
           spy={true}
           smooth={true}
-          offset={10}
           duration={500}
         >
           Contact
