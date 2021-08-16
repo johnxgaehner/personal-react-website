@@ -4,7 +4,15 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: url(../src/images/cursor.png) 12 12, auto;
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
 }
+
+/* .App #home,
+.App #about,
+.App #contact {
+  scroll-snap-align: center;
+} */
 
 .header {
   position: fixed;
@@ -32,6 +40,10 @@ h1 {
 .header__navigation a {
   text-decoration: none;
   color: black;
+}
+
+.header__navigation .active {
+  color: blue;
 }
 
 .footer {

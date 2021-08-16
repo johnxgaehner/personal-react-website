@@ -1,6 +1,6 @@
 import "./App.css";
-import { NavLink } from "react-router-dom";
 import Div100vh from "react-div-100vh";
+import { Link } from "react-scroll";
 
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -11,21 +11,46 @@ function App() {
     <div className="App">
       <header className="header">
         <nav className="header__navigation">
-          <NavLink exact to="/">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
             <h1>John-Lucas Goehner</h1>
-          </NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+          >
+            Contact
+          </Link>
         </nav>
       </header>
 
-      <Div100vh>
+      <Div100vh id="home">
         <Home />
       </Div100vh>
-      <Div100vh>
+      <Div100vh id="about">
         <About />
       </Div100vh>
-      <Div100vh>
+      <Div100vh id="contact">
         <Contact />
       </Div100vh>
 
