@@ -1,34 +1,28 @@
 import "./App.css";
-import { Switch, Route, NavLink } from "react-router-dom";
+import Div100vh from "react-div-100vh";
+
+import Header from "./components/Header";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <nav className="header__navigation">
-          <NavLink exact to="/">
-            <h1>John-Lucas Goehner</h1>
-          </NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </nav>
-      </header>
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Header />
 
-      <footer className="footer">Ⓒ 2021 John-Lucas Goehner</footer>
+      <Div100vh id="home">
+        <Home />
+      </Div100vh>
+      <Div100vh id="about">
+        <About />
+      </Div100vh>
+      <Div100vh id="contact">
+        <Contact />
+      </Div100vh>
+
+      <Footer />
     </div>
   );
 }

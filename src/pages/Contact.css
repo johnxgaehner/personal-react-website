@@ -1,18 +1,13 @@
 .contact {
+  height: 100%;
   padding: 2rem;
   display: flex;
-  word-break: break-all;
   align-items: center;
   justify-content: center;
+  word-break: break-all;
 }
 
 .contact__info--large-item {
-  all: unset;
-  font-size: 4rem;
-  display: flex;
-}
-
-.contact__info--small-item {
   all: unset;
   font-size: 2rem;
   display: flex;
