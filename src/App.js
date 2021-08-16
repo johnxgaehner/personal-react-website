@@ -1,5 +1,7 @@
 import "./App.css";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Div100vh from "react-div-100vh";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -16,17 +18,16 @@ function App() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+
+      <Div100vh>
+        <Home />
+      </Div100vh>
+      <Div100vh>
+        <About />
+      </Div100vh>
+      <Div100vh>
+        <Contact />
+      </Div100vh>
 
       <footer className="footer">Ⓒ 2021 John-Lucas Goehner</footer>
     </div>
